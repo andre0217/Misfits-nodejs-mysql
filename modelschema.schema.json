@@ -1,0 +1,89 @@
+{
+  "$schema": "Marvel characters",
+  "definitions": {
+    "object_01": {
+      "type": "object",
+      "required": [
+        "available",
+        "returned",
+        "collectionURI",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "available": {
+          "type": "string"
+        },
+        "returned": {
+          "type": "string"
+        },
+        "collectionURI": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "title": "items",
+          "items": {
+            "type": "object",
+            "required": [
+              "resourceURI",
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "resourceURI": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "object_02": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "description",
+        "urls",
+        "thumbnail",
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "thumbnail": {
+          "title": "thumbnail",
+          "type": "object",
+          "required": [
+            "path",
+            "extension"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "extension": {
+              "type": "string"
+            }
+          }
+        }
+      }
+      }
+  }
+}
+  
